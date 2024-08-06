@@ -6,6 +6,17 @@
     <title>MV Informática</title>
     <link href="./output.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .accordion-content.show {
+            max-height: 1000px; /* Arbitrary high value for demonstration */
+        }
+    </style>
     
 </head>
 
@@ -104,12 +115,116 @@
          </div>
          <div class=" bg-[#f4fcfb] w-full overflow-x-scroll [&::-webkit-scrollbar]:hidden py-11 pl-6">
             <div class="flex space-x-4">
-                <img class="md:w-96 md:h-20 " src="img/depoimento2.jpeg" alt="depoimentos">
+                <img class="md:w-96 md:h-40 " src="img/depoimento4.jpeg" alt="depoimentos">
+                <img class="md:w-96 md:h-40 " src="img/depoimento2.jpeg" alt="depoimentos">
                 <img class="md:w-96 md:h-40 " src="img/depoimento1.jpeg" alt="depoimentos">
                 <img class="md:w-96 md:h-40 " src="img/depoimento3.jpeg" alt="depoimentos">
             </div>
         </div>
-    </main>
+
+
+            <!-- Seção de Planos Anuais -->
+        <section class="py-20 bg-[#FFFFFF]">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-semibold mb-6">Valor de nossos serviços</h2>
+                <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-6">
+
+                    <!-- Plano Básico -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 ">
+                        <h3 class="text-2xl font-semibold mb-4">Plano Anual</h3>
+                        <p class="text-4xl font-bold mb-4">R$ 320/ano</p>
+                        <ul class="text-left mb-6">
+                            <li class="mb-2 flex p-2"> <img class="w-6 h-6 mr-2" src="img/correto.png" alt=""> Receba seus pedidos ilimitados no WhatsApp</li>
+                            <li class="mb-2 flex p-2"> <img class="w-6 h-6 mr-2" src="img/correto.png" alt=""> Disponibilize informações detalhadas do produto de forma automática</li>
+                            <li class="mb-2 flex p-2"> <img class="w-6 h-6 mr-2" src="img/correto.png" alt=""> Gerencie os pedidos pelo celular ou computador</li>
+                            <li class="mb-2 flex p-2"> <img class="w-6 h-6 mr-2" src="img/correto.png" alt=""> Monte o seu catálogo em poucos minutos</li>
+                            <li class="mb-2 flex p-2"> <img class="w-6 h-6 mr-2" src="img/correto.png" alt=""> Produtos ilimitados</li>
+                            <li class="mb-2 flex p-2"> <img class="w-6 h-6 mr-2" src="img/correto.png" alt=""> Controle de estoque</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Sessão sete -->
+         <div class="bg-[#5BD3B7] py-11 mx-auto flex flex-col items-center justify-center">
+            <h2 class="text-2xl font-semibold text-center p-6">Perguntas Frequentes</h2>
+            
+            <div class="w-full border-t border-gray-200 max-w-3xl">
+                <button class="w-full text-left px-6 py-4 focus:outline-none accordion-header">
+                    <h3 class="text-lg font-medium">Como irei receber os meus pedidos?</h3>
+                </button>
+                <div class="px-6 accordion-content">
+                    <p>Seus pedidos serão enviados para o WhatsApp do seu negócio.</p>
+                </div>
+            </div>
     
+            <div class="w-full border-t border-gray-200 max-w-3xl">
+                <button class="w-full text-left px-6 py-4 focus:outline-none accordion-header">
+                    <h3 class="text-lg font-medium">Precisa instalar algum aplicativo?</h3>
+                </button>
+                <div class="px-6 accordion-content">
+                    <p>Não, você consegue acessar por celular ou computador sem necessidade de baixar aplicativo.</p>
+                </div>
+            </div>
+    
+            <div class="w-full border-t border-gray-200 max-w-3xl">
+                <button class="w-full text-left px-6 py-4 focus:outline-none accordion-header">
+                    <h3 class="text-lg font-medium">O Meu Catálogo Digital é um aplicativo?</h3>
+                </button>
+                <div class="px-6 accordion-content">
+                    <p>Não, seus clientes irão ter acesso aos seus produtos através de um site personalizado como: meucatalogodigital.com</p>
+                </div>
+            </div>
+    
+            <div class="w-full border-t border-gray-200 max-w-3xl">
+                <button class="w-full text-left px-6 py-4 focus:outline-none accordion-header">
+                    <h3 class="text-lg font-medium">É fácil atualizar um catálogo online?</h3>
+                </button>
+                <div class="px-6 accordion-content">
+                    <p>Sim, é muito fácil. Você pode adicionar, remover ou atualizar produtos e informações de forma rápida e prática, mantendo seu catálogo sempre atualizado.</p>
+                </div>
+            </div>
+    
+            <div class="w-full border-t border-gray-200 max-w-3xl">
+                <button class="w-full text-left px-6 py-4 focus:outline-none accordion-header">
+                    <h3 class="text-lg font-medium">Serve para qualquer tipo de negócio?</h3>
+                </button>
+                <div class="px-6 accordion-content">
+                    <p>Sim, o Meu Catálogo Digital é para qualquer tipo de negócio como: lojas de roupas, serviços, produtos, imobiliárias e muitos outros.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <!-- Rodapé -->
+        <footer class="bg-[#5BD3B7] text-white py-6 pt-20">
+            <div class="container mx-auto px-6 flex flex-col  items-center justify-center">
+                  <div class="flex">
+                    <a href="https://www.instagram.com/mv__informatica/" class="text-white mx-2 hover:text-gray-400">
+                        <img class="w-9" src="img/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=18991602278" class="text-white mx-2 hover:text-gray-400">
+                        <img class="w-10" src="img/whatsapp.png" alt="whatsapp">
+                    </a>
+                  </div>
+                    <p>&copy; 2024 MV Informática. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function () {
+                    const content = this.nextElementSibling;
+                    content.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
