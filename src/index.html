@@ -5,37 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MV Informática</title>
     <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
 
 <body class="bg-[#181E20]">
     <header>
-        <nav>
+        <nav class="flex items-center justify-between p-3">
             <img class="w-24 p-2" src="img/logo.png" alt="logo">
+            <a class="text-lg text-white p-2 bg-[#5BD3B7] rounded-md inline-block" href="#">Comece agora</a>
         </nav>
     </header>
 
     <main>
 
          <!-- Sessão um -->
-        <div class="flex justify-between pl-4 pt-4 mt-9 flex-wrap">
-            <div>
-                <h1 class="text-2xl text-white">Com um catálogo, seus clientes podem fazer <span class="text-[#5BD3B7] font-semibold">pedidos online</span> a qualquer 
-                    hora e de qualquer lugar. Conquiste novos mercados, atenda clientes 
+         <div class="flex max-sm:flex-wrap items-center justify-between pl-4 pt-4 mt-9 space-x-4">
+            <div class="w-full md:w-1/2">
+                <h1 class="text-2xl text-white mb-4">
+                    Com um catálogo, seus clientes podem fazer 
+                    <span class="text-[#5BD3B7] font-semibold">pedidos online</span> 
+                    a qualquer hora e de qualquer lugar. Conquiste novos mercados, atenda clientes 
                     distantes e elimine a necessidade de enviar PDFs para seus clientes.
                 </h1>
-                <a class="text-lg text-white p-4 bg-[#5BD3B7] rounded-md" href="#">Entre em contato</a>
+                <a class="text-lg text-white p-4 bg-[#5BD3B7] rounded-md inline-block" href="#">Entre em contato</a>
             </div>
-            <div>
-                <img src="img/catalogo.png" alt="imagem do catalogo">
+            <div class="w-full md:w-1/2 mt-11 md:mt-11">
+                <img src="img/catalogo.png" alt="imagem do catalogo" class="w-full h-auto">
             </div>
         </div>
 
         <!-- Sessão dois -->
-         <div class="flex items-center justify-around bg-[#f4fcfb] p-4 flex-wrap py-9">
+         <div class="flex items-center justify-around bg-[#f4fcfb] p-4 max-sm:flex-wrap py-12">
              <img src="img/compras-oline.png" alt="compras-oline">
             <div>
-                <h1 class="font-semibold text-[#5BD3B7] text-2xl">O que é um catalogo Online?</h1>
-                <p class="pt-2 text-sm">
+                <h1 class="font-semibold text-[#5BD3B7] md:text-3xl text-2xl">O que é um catalogo Online?</h1>
+                <p class="pt-2 text-sm md:text-lg md:w-96">
                     Um catálogo online é como uma vitrine digital para seus produtos. Em vez de ter uma loja física 
                     onde as pessoas precisam ir até lá, você tem um site onde todos os seus produtos estão organizados 
                     de forma bonita e acessível.
@@ -46,17 +51,66 @@
    
 
          <!-- Sessão três -->
-        <div class="bg-[#FFFFFF] flex items-center justify-around p-4 flex-wrap py-5">
+        <div class="bg-[#FFFFFF] flex items-center justify-around p-4 max-sm:flex-wrap py-5">
             <div class="">
                 <h1 class="text-[#5BD3B7] font-semibold text-2xl py-4">Agilize suas vendas, basta enviar o link e aguardar o cliente fazer o pedido!</h1>
                 <p class="text-lg pb-4">Com um Catálogo Digital você expõe seus produtos online sem pagar taxas ou comissões.</p>
 
-                <p class="text-sm flex m-2"> <img class="w-6 h-6 mr-2" src="img/correto.png" alt=""> Dê adeus ao uso de catálogos via PDF</p>
-                <p class="text-sm flex m-2"> <img class="w-6 h-6 mr-2" src="img/correto.png" alt="">Pare de perder tempo no direct ou WhatsApp</p>
-                <p class="text-sm flex m-2"> <img class="w-6 h-6 mr-2" src="img/correto.png" alt="">Evite repetir as mesmas informações pra vários clientes</p>
-                <p class="text-sm flex m-2"> <img class="w-6 h-6 mr-2" src="img/correto.png" alt="">Pare de procurar onde estão os pedidos na conversa</p>
+                <p class="text-md flex m-2"> <img class="w-6 h-6 mr-2" src="img/correto.png" alt=""> Dê adeus ao uso de catálogos via PDF</p>
+                <p class="text-md flex m-2"> <img class="w-6 h-6 mr-2" src="img/correto.png" alt="">Pare de perder tempo no direct ou WhatsApp</p>
+                <p class="text-md flex m-2"> <img class="w-6 h-6 mr-2" src="img/correto.png" alt="">Evite repetir as mesmas informações pra vários clientes</p>
+                <p class="text-md flex m-2"> <img class="w-6 h-6 mr-2" src="img/correto.png" alt="">Pare de procurar onde estão os pedidos na conversa</p>
             </div>
             <img class="w-96" src="img/mulher.webp" alt="mulher comprando online">
+        </div>
+
+
+          <!-- Sessão quatro -->
+          <div class="bg-[#f4fcfb] flex items-center justify-around p-4 max-sm:flex-wrap py-5">
+            <div class="">
+                <h1 class="text-[#5BD3B7] font-semibold text-2xl py-4 ">Sua vitrine online de produtos pronta em 5 minutos</h1>
+                <p class="text-lg pb-4 md:w-[500px]">O Meu Catálogo Digital tem um painel de controle super simples e intuitivo que permite que 
+                    você controle seu estoque, cadastre produtos ilimitados, variações, preços, descontos e as informações 
+                    que quiser!
+                </p>
+            </div>
+
+            <div>
+                <p class="text-lg flex m-2  w-64"> <img class="w-11 h-11 mr-2" src="img/crie.webp" alt=""> Crie seu catálogo em 5 minutos</p>
+                <p class="text-lg flex m-2 mt-4 w-64"> <img class="w-12 h-12 mr-2" src="img/gerencie.webp" alt=""> Gerencie e controle tudo pelo celular</p>
+                <p class="text-lg flex m-2 mt-4 w-64"> <img class="w-11 h-11 mr-2" src="img/receba.webp" alt=""> Receba seu pedido organizado no WhatsApp</p>
+            </div>
+        </div>
+
+        
+          <!-- Sessão cinco -->
+          <div class="bg-[#FFFFFF] flex items-center justify-around p-4 max-sm:flex-wrap py-11">
+            <div class="">
+                <h1 class="text-[#5BD3B7] font-semibold text-2xl py-4 md:text-4xl md:w-[700px] mb-12">Entenda como um Catálogo Digital te ajuda a vender!</h1>
+                <img src="img/pedido.webp" alt="">
+            </div>
+
+            <div>
+                <p class="text-lg flex m-2 w-64  p-4  rounded-md bg-[#5bd3b7] text-white"> O cliente vê seu link nas redes sociais </p>
+                <p class="text-lg flex m-2 mt-4 w-64 p-4 ml-9 rounded-md bg-[#5bd3b7] text-white"> Ele acessa sua loja virtual e escolhe os produtos com facilidade</p>
+                <p class="text-lg flex m-2 mt-4 w-64 p-4 rounded-md bg-[#5bd3b7] text-white"> Os pedidos chegam de forma organizada no seu WhatsApp</p>
+            </div>
+        </div>
+
+         <!-- Sessão seis -->
+         <div class=" bg-[#f4fcfb] text-center pt-6">
+            <h1 class="text-[#5BD3B7] font-semibold text-4xl md:5xl py-4 ">+ de 10 lojistas</h1>
+            <p class="text-lg pb-4">já garantiram seus catálogos online de vendas!</p>
+         </div>
+         <div class=" bg-[#f4fcfb] w-full overflow-x-scroll [&::-webkit-scrollbar]:hidden py-11 pl-6">
+            <div class="flex space-x-4">
+                <img class="md:w-96 md:h-52 " src="img/depoimento1.jpeg" alt="depoimentos">
+                <img class="md:w-96 md:h-52 " src="img/depoimento2.jpeg" alt="depoimentos">
+                <img class="md:w-96 md:h-52 " src="img/depoimento1.jpeg" alt="depoimentos">
+                <img class="md:w-96 md:h-52 " src="img/depoimento1.jpeg" alt="depoimentos">
+                <img class="md:w-96 md:h-52 " src="img/depoimento1.jpeg" alt="depoimentos">
+                <img class="md:w-96 md:h-52 " src="img/depoimento1.jpeg" alt="depoimentos">
+            </div>
         </div>
     </main>
     
